@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #cacaca;
+  font-size: 24px;
+  height: 100vh;
+  text-align: center;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 80px 400px auto 250px;
+  grid-template-rows: 80px auto;
+}
+
+Nav {
+  border: 1px solid black;
+  grid-column: 1;
+  grid-row: 1/ span 2;
+  color: white;
+  background-color: #343a40;
+}
+
+menu {
+  border: 1px solid black;
+  grid-column: 2/ span3;
+  grid-row: 1;
+  background-color: #7048e8;
+  padding: 10px;
+  gap: 10px;
+}
+
+button {
+  background-color: #7048e8;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #563c9b;
+}
+
+section {
+  grid-column: 2/3;
+  grid-row: 2;
+  background-color: #e9ecef;
+  color: black;
+  overflow: scroll;
+}
+
+.email {
+  background-color: #f8f9fa;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email:hover {
+  background-color: #e2e6ea;
+}
+
+main {
+  grid-column: auto;
+  grid-row: 2;
+  color: black;
+}
+
+aside {
+  grid-column: 4;
+  color: black;
+  grid-row: 2;
+  background-color: #e9ecef;
+}
